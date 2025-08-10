@@ -14,6 +14,40 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        left-curly {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <1 11>;
+        };
+
+        left-square {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <2 12>;
+        };
+
+        left-round {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 3>;
+        };
+
+        right-round {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 6>;
+        };
+
+        right-square {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <17 7>;
+        };
+
+        right-curly {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <18 8>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
